@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Presentation", "3.Presentation", "{009EF52B-8C9F-4D13-9784-04ED396567C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Attached", "1.Attached", "{D86BACFD-FC9C-4599-B034-26FF73B487AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.BusinessLogic", "2.BusinessLogic", "{0A60B576-1069-426C-92D5-0E6389F31C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenPy.Main", "VenPy\VenPy.Main.csproj", "{920CAEEB-5374-4638-8F88-0120B5C11893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenPy.Class", "VenPy.Class\VenPy.Class.csproj", "{276EFEBF-48D8-4FC8-AC3B-1C36429E7F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenPy.Controls", "VenPy.Controls\VenPy.Controls.csproj", "{4D791276-9BB9-45C6-AD1E-3BDEFEBD5D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenPy.Connection", "VenPy.Connection\VenPy.Connection.csproj", "{2C7432D9-5D2E-432E-BAD2-809E918852C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenPy.Entities", "VenPy.Entities\VenPy.Entities.csproj", "{40004EAA-60E7-4C46-B1DE-DC358431A5CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{920CAEEB-5374-4638-8F88-0120B5C11893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920CAEEB-5374-4638-8F88-0120B5C11893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920CAEEB-5374-4638-8F88-0120B5C11893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920CAEEB-5374-4638-8F88-0120B5C11893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276EFEBF-48D8-4FC8-AC3B-1C36429E7F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276EFEBF-48D8-4FC8-AC3B-1C36429E7F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276EFEBF-48D8-4FC8-AC3B-1C36429E7F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276EFEBF-48D8-4FC8-AC3B-1C36429E7F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D791276-9BB9-45C6-AD1E-3BDEFEBD5D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D791276-9BB9-45C6-AD1E-3BDEFEBD5D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D791276-9BB9-45C6-AD1E-3BDEFEBD5D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D791276-9BB9-45C6-AD1E-3BDEFEBD5D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C7432D9-5D2E-432E-BAD2-809E918852C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7432D9-5D2E-432E-BAD2-809E918852C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7432D9-5D2E-432E-BAD2-809E918852C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7432D9-5D2E-432E-BAD2-809E918852C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40004EAA-60E7-4C46-B1DE-DC358431A5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40004EAA-60E7-4C46-B1DE-DC358431A5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40004EAA-60E7-4C46-B1DE-DC358431A5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40004EAA-60E7-4C46-B1DE-DC358431A5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{920CAEEB-5374-4638-8F88-0120B5C11893} = {009EF52B-8C9F-4D13-9784-04ED396567C2}
+		{276EFEBF-48D8-4FC8-AC3B-1C36429E7F26} = {D86BACFD-FC9C-4599-B034-26FF73B487AA}
+		{4D791276-9BB9-45C6-AD1E-3BDEFEBD5D15} = {D86BACFD-FC9C-4599-B034-26FF73B487AA}
+		{2C7432D9-5D2E-432E-BAD2-809E918852C6} = {0A60B576-1069-426C-92D5-0E6389F31C62}
+		{40004EAA-60E7-4C46-B1DE-DC358431A5CD} = {0A60B576-1069-426C-92D5-0E6389F31C62}
+	EndGlobalSection
+EndGlobal

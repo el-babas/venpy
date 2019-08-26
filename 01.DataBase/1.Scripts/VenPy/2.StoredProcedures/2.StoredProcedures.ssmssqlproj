@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="2.StoredProcedures">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="PC-JOSE\SQL12:PC-JOSE\crist">
+          <Created>2017-12-30T23:39:40.9892429-05:00</Created>
+          <Type>SQL</Type>
+          <Server>PC-JOSE\SQL12</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>VenPy</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="VENPY_BranchOffices.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_BranchOffices.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Business.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Business.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Entities.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Entities.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_EntityTypes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_EntityTypes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_ExchangeRate.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_ExchangeRate.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_FunctionsEntities.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_FunctionsEntities.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_MeasurementUnitsProducts.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_MeasurementUnitsProducts.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_PersonalConfiguration.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_PersonalConfiguration.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_PointsSale.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_PointsSale.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_PriceList.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_PriceList.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_PriceListDetail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_PriceListDetail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Products.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Products.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_ProformaDetails.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_ProformaDetails.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Proformas.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Proformas.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Series.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Series.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Services.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Services.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Settings.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Settings.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Tables.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Ubigeos.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Ubigeos.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_Users.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_Users.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VENPY_WarehousesBranches.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PC-JOSE\SQL12:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PC-JOSE\SQL12</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>VENPY_WarehousesBranches.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

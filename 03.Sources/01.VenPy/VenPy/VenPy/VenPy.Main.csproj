@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{920CAEEB-5374-4638-8F88-0120B5C11893}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VenPy.Main</RootNamespace>
+    <AssemblyName>VenPy.Main</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>VenPy.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="03.VENPY_Maintenance\02.Business\MAIN002MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\02.Business\MAIN002MView.Designer.cs">
+      <DependentUpon>MAIN002MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\02.Business\MAIN002PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\02.Business\IMAIN002View.cs" />
+    <Compile Include="03.VENPY_Maintenance\03.BranchOffices\MAIN003LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\03.BranchOffices\MAIN003LView.Designer.cs">
+      <DependentUpon>MAIN003LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\03.BranchOffices\MAIN003MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\03.BranchOffices\MAIN003MView.Designer.cs">
+      <DependentUpon>MAIN003MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\03.BranchOffices\MAIN003PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\03.BranchOffices\IMAIN003View.cs" />
+    <Compile Include="03.VENPY_Maintenance\10.Tables\IMAIN010View.cs" />
+    <Compile Include="03.VENPY_Maintenance\10.Tables\MAIN010LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\10.Tables\MAIN010LView.Designer.cs">
+      <DependentUpon>MAIN010LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\10.Tables\MAIN010MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\10.Tables\MAIN010MView.Designer.cs">
+      <DependentUpon>MAIN010MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\10.Tables\MAIN010PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\04.PointsSale\IMAIN004View.cs" />
+    <Compile Include="03.VENPY_Maintenance\04.PointsSale\MAIN004LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\04.PointsSale\MAIN004LView.Designer.cs">
+      <DependentUpon>MAIN004LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\04.PointsSale\MAIN004MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\04.PointsSale\MAIN004MView.Designer.cs">
+      <DependentUpon>MAIN004MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\04.PointsSale\MAIN004PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\05.EntityTypes\IMAIN005View.cs" />
+    <Compile Include="03.VENPY_Maintenance\05.EntityTypes\MAIN005LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\05.EntityTypes\MAIN005LView.Designer.cs">
+      <DependentUpon>MAIN005LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\05.EntityTypes\MAIN005MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\05.EntityTypes\MAIN005MView.Designer.cs">
+      <DependentUpon>MAIN005MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\05.EntityTypes\MAIN005PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\09.Services\IMAIN009View.cs" />
+    <Compile Include="03.VENPY_Maintenance\09.Services\MAIN009LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\09.Services\MAIN009LView.Designer.cs">
+      <DependentUpon>MAIN009LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\09.Services\MAIN009MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\09.Services\MAIN009MView.Designer.cs">
+      <DependentUpon>MAIN009MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\09.Services\MAIN009PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\07.Products\IMAIN007View.cs" />
+    <Compile Include="03.VENPY_Maintenance\07.Products\MAIN007MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\07.Products\MAIN007MView.Designer.cs">
+      <DependentUpon>MAIN007MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\07.Products\MAIN007LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\07.Products\MAIN007LView.Designer.cs">
+      <DependentUpon>MAIN007LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\07.Products\MAIN007PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\06.Entities\IMAIN006View.cs" />
+    <Compile Include="03.VENPY_Maintenance\06.Entities\MAIN006LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\06.Entities\MAIN006LView.Designer.cs">
+      <DependentUpon>MAIN006LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\06.Entities\MAIN006MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\06.Entities\MAIN006MView.Designer.cs">
+      <DependentUpon>MAIN006MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\06.Entities\MAIN006PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\08.PriceList\IMAIN008View.cs" />
+    <Compile Include="03.VENPY_Maintenance\08.PriceList\MAIN008MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\08.PriceList\MAIN008MView.Designer.cs">
+      <DependentUpon>MAIN008MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\08.PriceList\MAIN008LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\08.PriceList\MAIN008LView.Designer.cs">
+      <DependentUpon>MAIN008LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\08.PriceList\MAIN008PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\11.Ajustes\IMAIN011View.cs" />
+    <Compile Include="03.VENPY_Maintenance\11.Ajustes\MAIN011MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\11.Ajustes\MAIN011MView.Designer.cs">
+      <DependentUpon>MAIN011MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\11.Ajustes\MAIN011PView.cs" />
+    <Compile Include="04.VENPY_Sale\02.Series\ISALE002View.cs" />
+    <Compile Include="04.VENPY_Sale\02.Series\SALE002LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="04.VENPY_Sale\02.Series\SALE002LView.Designer.cs">
+      <DependentUpon>SALE002LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04.VENPY_Sale\02.Series\SALE002PView.cs" />
+    <Compile Include="04.VENPY_Sale\01.ExchangeRate\ISALE001View.cs" />
+    <Compile Include="04.VENPY_Sale\01.ExchangeRate\SALE001LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="04.VENPY_Sale\01.ExchangeRate\SALE001LView.Designer.cs">
+      <DependentUpon>SALE001LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04.VENPY_Sale\01.ExchangeRate\SALE001PView.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="01.VENPY_Authentication\AUTE001MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01.VENPY_Authentication\AUTE001MView.Designer.cs">
+      <DependentUpon>AUTE001MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01.VENPY_Authentication\AUTE001PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\01.Ubigeos\IMAIN001View.cs" />
+    <Compile Include="03.VENPY_Maintenance\01.Ubigeos\MAIN001LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\01.Ubigeos\MAIN001LView.Designer.cs">
+      <DependentUpon>MAIN001LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\01.Ubigeos\MAIN001MView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\01.Ubigeos\MAIN001MView.Designer.cs">
+      <DependentUpon>MAIN001MView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\01.Ubigeos\MAIN001PView.cs" />
+    <Compile Include="03.VENPY_Maintenance\02.Business\MAIN002LView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="03.VENPY_Maintenance\02.Business\MAIN002LView.Designer.cs">
+      <DependentUpon>MAIN002LView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02.VENPY_WorkEnvironment\WENV001MVIew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02.VENPY_WorkEnvironment\WENV001MVIew.Designer.cs">
+      <DependentUpon>WENV001MVIew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02.VENPY_WorkEnvironment\WENV001PVIew.cs" />
+    <Compile Include="VENPY_TemporaryFiles\TemporaryFiles.cs" />
+    <EmbeddedResource Include="03.VENPY_Maintenance\02.Business\MAIN002MView.resx">
+      <DependentUpon>MAIN002MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\03.BranchOffices\MAIN003LView.resx">
+      <DependentUpon>MAIN003LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\03.BranchOffices\MAIN003MView.resx">
+      <DependentUpon>MAIN003MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\10.Tables\MAIN010LView.resx">
+      <DependentUpon>MAIN010LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\10.Tables\MAIN010MView.resx">
+      <DependentUpon>MAIN010MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\04.PointsSale\MAIN004LView.resx">
+      <DependentUpon>MAIN004LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\04.PointsSale\MAIN004MView.resx">
+      <DependentUpon>MAIN004MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\05.EntityTypes\MAIN005LView.resx">
+      <DependentUpon>MAIN005LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\05.EntityTypes\MAIN005MView.resx">
+      <DependentUpon>MAIN005MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\09.Services\MAIN009LView.resx">
+      <DependentUpon>MAIN009LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\09.Services\MAIN009MView.resx">
+      <DependentUpon>MAIN009MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\07.Products\MAIN007MView.resx">
+      <DependentUpon>MAIN007MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\07.Products\MAIN007LView.resx">
+      <DependentUpon>MAIN007LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\06.Entities\MAIN006LView.resx">
+      <DependentUpon>MAIN006LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\06.Entities\MAIN006MView.resx">
+      <DependentUpon>MAIN006MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\08.PriceList\MAIN008MView.resx">
+      <DependentUpon>MAIN008MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\08.PriceList\MAIN008LView.resx">
+      <DependentUpon>MAIN008LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\11.Ajustes\MAIN011MView.resx">
+      <DependentUpon>MAIN011MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04.VENPY_Sale\02.Series\SALE002LView.resx">
+      <DependentUpon>SALE002LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04.VENPY_Sale\01.ExchangeRate\SALE001LView.resx">
+      <DependentUpon>SALE001LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01.VENPY_Authentication\AUTE001MView.resx">
+      <DependentUpon>AUTE001MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\01.Ubigeos\MAIN001LView.resx">
+      <DependentUpon>MAIN001LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\01.Ubigeos\MAIN001MView.resx">
+      <DependentUpon>MAIN001MView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03.VENPY_Maintenance\02.Business\MAIN002LView.resx">
+      <DependentUpon>MAIN002LView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02.VENPY_WorkEnvironment\WENV001MVIew.resx">
+      <DependentUpon>WENV001MVIew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VenPy.Class\VenPy.Class.csproj">
+      <Project>{276efebf-48d8-4fc8-ac3b-1c36429e7f26}</Project>
+      <Name>VenPy.Class</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VenPy.Connection\VenPy.Connection.csproj">
+      <Project>{2c7432d9-5d2e-432e-bad2-809e918852c6}</Project>
+      <Name>VenPy.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VenPy.Controls\VenPy.Controls.csproj">
+      <Project>{4d791276-9bb9-45c6-ad1e-3bdefebd5d15}</Project>
+      <Name>VenPy.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VenPy.Entities\VenPy.Entities.csproj">
+      <Project>{40004eaa-60e7-4c46-b1de-dc358431a5cd}</Project>
+      <Name>VenPy.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VenPy.ico" />
+    <None Include="VENPY_Resource\cancel_16x16.png" />
+    <Content Include="VENPY_Resource\VenPy.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="VENPY_Resource\add_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="VENPY_Resource\Administration.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\BranchOffices.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\BranchOffices.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Business.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Business.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Clear_12x12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\close_20x20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Company.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="VENPY_Resource\VenPy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="VENPY_Resource\company_30x30.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="VENPY_Resource\edit_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="VENPY_Resource\Entities.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Entities.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\EntityTypes.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\EntityTypes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\ExchangeRate.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\ExchangeRate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\last_24x24.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="VENPY_Resource\LogotipoVenPy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="VENPY_Resource\Maintenance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\maximize_20x20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\minimize_20x20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="VENPY_Resource\remove_16x16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="VENPY_Resource\PointsSale.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\PointsSale.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\PriceList.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\PriceList.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Products.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Products.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Report.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Sale.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Search.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Search_12x12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Services.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Services.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Settings.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Settings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Tables.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Tables.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Ubigeo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\Ubigeo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\user1_30x30.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\user2_30x30.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

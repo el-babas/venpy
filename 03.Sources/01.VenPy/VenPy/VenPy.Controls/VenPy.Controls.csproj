@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D791276-9BB9-45C6-AD1E-3BDEFEBD5D15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VenPy.Controls</RootNamespace>
+    <AssemblyName>VenPy.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\02.Libraries\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\02.Libraries\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_Buttons\PrimaryButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENPY_Buttons\PrimaryButton.Designer.cs">
+      <DependentUpon>PrimaryButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_Connection\Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENPY_Connection\Connection.Designer.cs">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_GridView\CustomDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENPY_GridView\CustomDataGridView.Designer.cs">
+      <DependentUpon>CustomDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_GridView\CustomDataGridViewHelpTextBoxControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENPY_GridView\CustomGridViewTextBoxNumeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENPY_GridView\CustomGridViewTextBoxNumeric.Designer.cs">
+      <DependentUpon>CustomGridViewTextBoxNumeric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_GridView\CustomDataGridViewTextBoxNumericControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENPY_Help\HelpEntity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENPY_Help\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENPY_Help\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_Messages\Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENPY_Messages\Messages.Designer.cs">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_Others\MaskedDateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VENPY_Others\MaskedDateTime.Designer.cs">
+      <DependentUpon>MaskedDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_Others\TextBoxNumeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VENPY_Preliminary\Preliminary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENPY_Preliminary\Preliminary.Designer.cs">
+      <DependentUpon>Preliminary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENPY_Preliminary\PreliminaryColumns.cs" />
+    <Compile Include="VENPY_Preliminary\RdlcGenerator.cs" />
+    <Compile Include="VENPY_Preliminary\RdlcTableGenerator.cs" />
+    <Compile Include="VENPY_Preliminary\ReportColumns.cs" />
+    <Compile Include="VENPY_Preliminary\ReportDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENPY_Connection\Connection.resx">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENPY_Help\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENPY_Messages\Messages.resx">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENPY_Others\MaskedDateTime.resx">
+      <DependentUpon>MaskedDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENPY_Preliminary\Preliminary.resx">
+      <DependentUpon>Preliminary.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eraser_16x16.jpg" />
+    <None Include="Resources\Search_16x16.png" />
+    <None Include="Resources\Clear_12x12.png" />
+    <None Include="Resources\Search_12x12.png" />
+    <Content Include="VENPY_Resource\ImgError.png" />
+    <Content Include="VENPY_Resource\ImgInformation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\ImgQuestion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\ImgSatisfactory.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VENPY_Resource\ImgWarning.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VenPy.Class\VenPy.Class.csproj">
+      <Project>{276efebf-48d8-4fc8-ac3b-1c36429e7f26}</Project>
+      <Name>VenPy.Class</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VenPy.Connection\VenPy.Connection.csproj">
+      <Project>{2c7432d9-5d2e-432e-bad2-809e918852c6}</Project>
+      <Name>VenPy.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VenPy.Entities\VenPy.Entities.csproj">
+      <Project>{40004eaa-60e7-4c46-b1de-dc358431a5cd}</Project>
+      <Name>VenPy.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

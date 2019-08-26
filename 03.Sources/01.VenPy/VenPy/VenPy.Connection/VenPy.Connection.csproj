@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C7432D9-5D2E-432E-BAD2-809E918852C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VenPy.Connection</RootNamespace>
+    <AssemblyName>VenPy.Connection</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VENPY_BranchOffices\1.BusinessLogic\BLVENPY_BranchOffices.cs" />
+    <Compile Include="VENPY_BranchOffices\1.BusinessLogic\IBLVENPY_BranchOffices.cs" />
+    <Compile Include="VENPY_BranchOffices\2.DataBase\DBVENPY_BranchOffices.cs" />
+    <Compile Include="VENPY_Business\1.BusinessLogic\BLVENPY_Business.cs" />
+    <Compile Include="VENPY_Business\1.BusinessLogic\IBLVENPY_Business.cs" />
+    <Compile Include="VENPY_Business\2.DataBase\DBVENPY_Business.cs" />
+    <Compile Include="VENPY_Entities\1.BusinessLogic\BLVENPY_Entities.cs" />
+    <Compile Include="VENPY_Entities\1.BusinessLogic\IBLVENPY_Entities.cs" />
+    <Compile Include="VENPY_Entities\2.DataBase\DBVENPY_Entities.cs" />
+    <Compile Include="VENPY_EntityTypes\1.BusinessLogic\BLVENPY_EntityTypes.cs" />
+    <Compile Include="VENPY_EntityTypes\1.BusinessLogic\IBLVENPY_EntityTypes.cs" />
+    <Compile Include="VENPY_EntityTypes\2.DataBase\DBVENPY_EntityTypes.cs" />
+    <Compile Include="VENPY_ProformaDetails\1.BusinessLogic\BLVENPY_ProformaDetails.cs" />
+    <Compile Include="VENPY_ProformaDetails\1.BusinessLogic\IBLVENPY_ProformaDetails.cs" />
+    <Compile Include="VENPY_ProformaDetails\2.DataBase\DBVENPY_ProformaDetails.cs" />
+    <Compile Include="VENPY_Proformas\1.BusinessLogic\BLVENPY_Proformas.cs" />
+    <Compile Include="VENPY_Proformas\1.BusinessLogic\IBLVENPY_Proformas.cs" />
+    <Compile Include="VENPY_Proformas\2.DataBase\DBVENPY_Proformas.cs" />
+    <Compile Include="VENPY_Series\1.BusinessLogic\BLVENPY_Series.cs" />
+    <Compile Include="VENPY_Series\1.BusinessLogic\IBLVENPY_Series.cs" />
+    <Compile Include="VENPY_Series\2.DataBase\DBVENPY_Series.cs" />
+    <Compile Include="VENPY_ExchangeRate\1.BusinessLogic\BLVENPY_PointsSale.cs" />
+    <Compile Include="VENPY_ExchangeRate\1.BusinessLogic\IBLVENPY_PointsSale.cs" />
+    <Compile Include="VENPY_ExchangeRate\2.DataBase\DBVENPY_PointsSale.cs" />
+    <Compile Include="VENPY_FunctionsEntities\1.BusinessLogic\BLVENPY_FunctionsEntities.cs" />
+    <Compile Include="VENPY_FunctionsEntities\1.BusinessLogic\IBLVENPY_FunctionsEntities.cs" />
+    <Compile Include="VENPY_FunctionsEntities\2.DataBase\DBVENPY_FunctionsEntities.cs" />
+    <Compile Include="VENPY_MeasurementUnitsProducts\1.BusinessLogic\BLVENPY_MeasurementUnitsProducts.cs" />
+    <Compile Include="VENPY_MeasurementUnitsProducts\1.BusinessLogic\IBLVENPY_MeasurementUnitsProducts.cs" />
+    <Compile Include="VENPY_MeasurementUnitsProducts\2.DataBase\DBVENPY_MeasurementUnitsProducts.cs" />
+    <Compile Include="VENPY_PersonalConfiguration\1.BusinessLogic\BLVENPY_PersonalConfiguration.cs" />
+    <Compile Include="VENPY_PersonalConfiguration\1.BusinessLogic\IBLVENPY_PersonalConfiguration.cs" />
+    <Compile Include="VENPY_PersonalConfiguration\2.DataBase\DBVENPY_PersonalConfiguration.cs" />
+    <Compile Include="VENPY_PointsSale\1.BusinessLogic\BLVENPY_PointsSale.cs" />
+    <Compile Include="VENPY_PointsSale\1.BusinessLogic\IBLVENPY_PointsSale.cs" />
+    <Compile Include="VENPY_PointsSale\2.DataBase\DBVENPY_PointsSale.cs" />
+    <Compile Include="VENPY_PriceListDetail\1.BusinessLogic\BLVENPY_PriceListDetail.cs" />
+    <Compile Include="VENPY_PriceListDetail\1.BusinessLogic\IBLVENPY_PriceListDetail.cs" />
+    <Compile Include="VENPY_PriceListDetail\2.DataBase\DBVENPY_PriceListDetail.cs" />
+    <Compile Include="VENPY_PriceList\1.BusinessLogic\BLVENPY_PriceList.cs" />
+    <Compile Include="VENPY_PriceList\1.BusinessLogic\IBLVENPY_PriceList.cs" />
+    <Compile Include="VENPY_PriceList\2.DataBase\DBVENPY_PriceList.cs" />
+    <Compile Include="VENPY_Products\1.BusinessLogic\BLVENPY_Products.cs" />
+    <Compile Include="VENPY_Products\1.BusinessLogic\IBLVENPY_Products.cs" />
+    <Compile Include="VENPY_Products\2.DataBase\DBVENPY_Products.cs" />
+    <Compile Include="VENPY_Services\1.BusinessLogic\BLVENPY_Services.cs" />
+    <Compile Include="VENPY_Services\1.BusinessLogic\IBLVENPY_Services.cs" />
+    <Compile Include="VENPY_Services\2.DataBase\DBVENPY_Services.cs" />
+    <Compile Include="VENPY_Settings\1.BusinessLogic\BLVENPY_Settings.cs" />
+    <Compile Include="VENPY_Settings\1.BusinessLogic\IBLVENPY_Settings.cs" />
+    <Compile Include="VENPY_Settings\2.DataBase\DBVENPY_Settings.cs" />
+    <Compile Include="VENPY_Tables\1.BusinessLogic\BLVENPY_Tables.cs" />
+    <Compile Include="VENPY_Tables\1.BusinessLogic\IBLVENPY_Tables.cs" />
+    <Compile Include="VENPY_Tables\2.DataBase\DBVENPY_Tables.cs" />
+    <Compile Include="VENPY_Ubigeos\1.BusinessLogic\BLVENPY_Ubigeos.cs" />
+    <Compile Include="VENPY_Ubigeos\1.BusinessLogic\IBLVENPY_Ubigeos.cs" />
+    <Compile Include="VENPY_Ubigeos\2.DataBase\DBVENPY_Ubigeos.cs" />
+    <Compile Include="VENPY_Users\1.BusinessLogic\BLVENPY_Users.cs" />
+    <Compile Include="VENPY_Users\1.BusinessLogic\IBLVENPY_Users.cs" />
+    <Compile Include="VENPY_Users\2.DataBase\DBVENPY_Users.cs" />
+    <Compile Include="VENPY_WarehousesBranches\1.BusinessLogic\BLVENPY_WarehousesBranches.cs" />
+    <Compile Include="VENPY_WarehousesBranches\1.BusinessLogic\IBLVENPY_WarehousesBranches.cs" />
+    <Compile Include="VENPY_WarehousesBranches\2.DataBase\DBVENPY_WarehousesBranches.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VenPy.Class\VenPy.Class.csproj">
+      <Project>{276efebf-48d8-4fc8-ac3b-1c36429e7f26}</Project>
+      <Name>VenPy.Class</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VenPy.Entities\VenPy.Entities.csproj">
+      <Project>{40004eaa-60e7-4c46-b1de-dc358431a5cd}</Project>
+      <Name>VenPy.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
